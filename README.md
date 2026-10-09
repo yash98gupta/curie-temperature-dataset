@@ -58,6 +58,8 @@ stores feature order, scaler statistics, and split indices.
 `tools/test_predictions.csv` stores held-out formulas, targets, and predictions.
 `tools/figs_new/` contains the figure panels and graphical abstract.
 `SHA256SUMS.json` identifies the files in the versioned release.
+Text-file checksums use the repository's canonical LF line endings; verification
+also accepts Windows CRLF checkouts. Image checksums cover the exact binary bytes.
 
 ## Scope and Limitations
 

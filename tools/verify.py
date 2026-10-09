@@ -11,6 +11,11 @@ from sklearn.preprocessing import StandardScaler
 from xgboost import XGBRegressor
 
 
+def release_bytes(path):
+    content = path.read_bytes()
+    return content if path.suffix == ".png" else content.replace(b"\r\n", b"\n")
+
+
 root = Path(__file__).resolve().parent.parent
 parser = argparse.ArgumentParser()
 parser.add_argument("--write-manifest", action="store_true")
@@ -18,7 +23,7 @@ arguments = parser.parse_args()
 results = json.loads((root / "tools/results.json").read_text())
 preprocessing = json.loads((root / "tools/preprocessing.json").read_text())
 source = root / "curie_temperature_dataset.csv"
-assert hashlib.sha256(source.read_bytes()).hexdigest() == results["dataset_sha256"]
+assert hashlib.sha256(release_bytes(source)).hexdigest() == results["dataset_sha256"]
 dataset = pd.read_csv(source)
 train_indices = preprocessing["train_indices"]
 test_indices = preprocessing["test_indices"]
@@ -50,8 +55,8 @@ if arguments.write_manifest:
              "curie_temperature_dataset.csv", "tools/analysis.py", "tools/verify.py", "tools/results.json",
              "tools/preprocessing.json", "tools/xgboost_seed42.json", "tools/test_predictions.csv"]
     names.extend(path.relative_to(root).as_posix() for path in sorted((root / "tools/figs_new").glob("*.png")))
-    manifest = {name: hashlib.sha256((root / name).read_bytes()).hexdigest() for name in names}
+    manifest = {name: hashlib.sha256(release_bytes(root / name)).hexdigest() for name in names}
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8", newline="\n")
 for name, digest in json.loads(manifest_path.read_text()).items():
-    assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest, name
+    assert hashlib.sha256(release_bytes(root / name)).hexdigest() == digest, name
 print("PASS: dataset hash, split, scaler, saved predictions, test metrics, CV summaries, and release manifest")
