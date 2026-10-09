@@ -1,0 +1,23 @@
+{
+  ".gitattributes": "d7aedd07efb771e944608fb6f3cc9e771c27b4f3c18b0fbcdd16cf5d82f94587",
+  ".gitignore": "f939a2a74393e4e7c77231a28bafba341881545b2eccf6c654e0aae85867a77e",
+  "README.md": "91b73db5b38ffda5e8d75b6f6980abac0611d4d20c10ce03c0d8c3a6ce9d7e06",
+  "LICENSE": "35fa5a49c503271e03d9b6ed2a8bbd3a34321551a7981a3f8ec198e1e10a4268",
+  "LICENSE-DATA.txt": "f56409447e1d13acaf81f6068cc68271ddb80b7125cd30b5a27635ead0033243",
+  "requirements.txt": "8631cdd36c70322a495159755d81395ceb1945d46b3b11bb96e05a528ff3de54",
+  "curie_temperature_dataset.csv": "9cc56864a26b06849b80dfd07715c41847efb792da54e4ec5a47d8d25115fc0a",
+  "tools/analysis.py": "637cb9edc73a0445eeac4228b82c9df69235ff0dbe051c1bee97c7a14fae553a",
+  "tools/verify.py": "2e97a48f2ed8b980ee83394bdad641be601004d85f4223c239a23c495e3053c5",
+  "tools/results.json": "63d181b65df040b0b748a125d404c1f3c4d937e02e7bf003a710bea76337b004",
+  "tools/preprocessing.json": "fbf143eb26513da04a72aadb301cc7959d3eecc4350f159ce732aa1f597e2b39",
+  "tools/xgboost_seed42.json": "ba3513285324ca49f7423dd7ddd5630c0a98c0d8c54c252db4db08613a226cf3",
+  "tools/test_predictions.csv": "2a7327982cc97aac42dab083a36152797e941849037be894931d66b299524b0a",
+  "tools/figs_new/fig1ab.png": "413d5f081a24b12655091b0af89a0c505c4ae239ea451b75e05f583dc20d0006",
+  "tools/figs_new/fig1c.png": "47fb56a1edbef080acdf082cb1fd55e3a0ec36eee2070dbcb6c7c11d8ddff46f",
+  "tools/figs_new/fig2.png": "f45e5c6ee5b982e0d05330f585ad0a11a372327ac8c88fd836c9805b64db163d",
+  "tools/figs_new/fig3a.png": "9e5234347574b74c0562426536759dd93a0daab37e72add133dec357196c947d",
+  "tools/figs_new/fig3b.png": "810742043ca175626e4220347c35d06d9aa2d41b85839b09e18fe053c396ee12",
+  "tools/figs_new/fig3c.png": "167f5ddecde1ebf46af13c6d5bf40ed24cc04af020ebc8adf8745ee2b66cb010",
+  "tools/figs_new/fig3d.png": "f043342c144f2d0bdd023ba6af28bb7d9947125d8fdbcbe38244e15ce025d51d",
+  "tools/figs_new/graphical_abstract.png": "8c45c1940b3557c45238acaec9de1e77459c51aae9f336504b0b7e50d3028aec"
+}

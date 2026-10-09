@@ -1,0 +1,14 @@
+The compiled dataset, derived numerical results, and figures in this repository
+are licensed under the Creative Commons Attribution 4.0 International License
+(CC BY 4.0).
+
+Attribution: Yash Gupta, Aryan Gupta, and Sai Siddhardha Singamaneni,
+Magnetic Ordering Temperature Dataset and Models,
+https://github.com/yash98gupta/curie-temperature-dataset
+
+License summary: https://creativecommons.org/licenses/by/4.0/
+Full legal terms: https://creativecommons.org/licenses/by/4.0/legalcode
+
+This license covers the compilers' rights in the released data and derived
+outputs. It does not relicense the underlying source publications. Code and
+trained model weights are covered separately by the MIT license in LICENSE.

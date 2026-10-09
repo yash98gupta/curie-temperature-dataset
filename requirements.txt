@@ -1,0 +1,9 @@
+numpy==2.4.4
+pandas==2.3.3
+scikit-learn==1.8.0
+scipy==1.17.1
+xgboost==3.2.0
+shap==0.52.0
+matplotlib==3.10.8
+matminer==0.10.1
+pymatgen==2026.5.4
